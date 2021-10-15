@@ -1,0 +1,139 @@
+:root {
+  --white: #fff;
+  --primary: #52858d;
+  --neutral-1: #edf7e7;
+  --neutral-2: #fefff9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 18px;
+  background-image: url(./image/background.jpg);
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 70px;
+  background-color: var(--white);
+  height: 100%;
+  padding-bottom: 70px;
+}
+
+.BMI-formula .img {
+  display: block;
+  transform: scale(0.8);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+
+  .left {
+    .form-input {
+      h1 {
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+
+      input {
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        margin-bottom: 10px;
+        margin-top: 1.5px;
+        padding: 0 8px;
+        &:focus {
+          background-color: var(--neutral-2);
+          border: 1px solid var(--primary);
+        }
+      }
+
+      #btn {
+        display: block;
+        border: none;
+        outline: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 2px;
+        background: var(--primary);
+        color: var(--neutral-2);
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          transform: scale(1.015);
+          cursor: pointer;
+          box-shadow: 2px 2px 4px 0px #6796be;
+        }
+      }
+    }
+  }
+
+  .right {
+    margin-left: auto;
+
+    .table {
+      border-collapse: collapse;
+      text-align: center;
+
+      thead {
+        background-color: var(--primary);
+        color: var(--white);
+        border: 1px solid var(--primary);
+      }
+
+      th {
+        padding: 15px;
+      }
+
+      td {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      tbody {
+        border: 1px solid var(--neutral-1);
+
+        tr:nth-child(2n) {
+          background-color: var(--neutral-2);
+        }
+
+        tr:nth-child(2n + 1) {
+          background-color: var(--neutral-1);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  p {
+    position: absolute;
+    z-index: 5;
+    top: -25px;
+    font-size: 15px;
+    left: 10px;
+    text-shadow: 1px 1px 2px var(--primary);
+    a {
+      text-decoration: none;
+      color: #31373d;
+      &:hover {
+        color: #9342c9;
+        text-decoration: underline;
+      }
+    }
+  }
+}

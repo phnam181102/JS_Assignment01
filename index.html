@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hí anh em!</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/lol.png" />
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="BMI-formula">
+        <img src="./image/Picture1.jpg" alt="" class="img" />
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="form-input">
+            <h1>BMI Calculator</h1>
+
+            <p>Height (in cm)</p>
+            <input type="text" id="height" />
+            <p>Weight (in kg)</p>
+            <input type="text" id="weight" />
+            <button id="btn">Calculate</button>
+            <div id="result"></div>
+          </div>
+        </div>
+
+        <div class="right">
+          <table class="table" id="nutrition-table">
+            <thead>
+              <tr>
+                <th>Chỉ số khối cơ thể</th>
+                <th>Phân loại</th>
+                <th>Nguy cơ phát triển bệnh</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>< 18.5</td>
+                <td>Gầy</td>
+                <td>Thấp</td>
+              </tr>
+
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Bình thường</td>
+                <td>Trung bình</td>
+              </tr>
+
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Hơi béo</td>
+                <td>Cao</td>
+              </tr>
+
+              <tr>
+                <td>30.0 - 34.9</td>
+                <td>Béo phì cấp độ 1</td>
+                <td>Cao</td>
+              </tr>
+
+              <tr>
+                <td>35.0 - 39.9</td>
+                <td>Béo phì cấp độ 2</td>
+                <td>Rất cao</td>
+              </tr>
+
+              <tr>
+                <td>> 40.0</td>
+                <td>Béo phì cấp độ 3</td>
+                <td>Nguy hiểm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="https://www.facebook.com/hmmmm.fks">&copy; Nam Phan</a></p>
+    </footer>
+  </body>
+</html>
